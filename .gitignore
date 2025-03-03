@@ -2,6 +2,9 @@
 bin/
 obj/
 
+# config files
+appsettings.json
+
 # Visual Studio files
 .vs/
 *.user
