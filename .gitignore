@@ -3,7 +3,7 @@ bin/
 obj/
 
 # config files
-appsettings.json
+FoundationApi/appsettings.*.json
 
 # Visual Studio files
 .vs/
