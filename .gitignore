@@ -1,0 +1,34 @@
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.csproj.user
+*.csproj.user.*
+
+# Rider / JetBrains
+.idea/
+
+# VSCode
+.vscode/
+
+# NuGet Packages (if applicable)
+packages/
+
+# Logs
+*.log
+logs/
+
+# Crash dumps
+*.stackdump
+*.dmp
+
+# User secrets (if accidentally placed in project folder)
+secrets.json
+
+# Optional: environment-specific configs if they contain secrets
+# appsettings.Development.json
+# appsettings.Production.json
