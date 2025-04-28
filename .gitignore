@@ -35,3 +35,4 @@ secrets.json
 # Optional: environment-specific configs if they contain secrets
 # appsettings.Development.json
 # appsettings.Production.json
+FoundationApi/appsettings.json

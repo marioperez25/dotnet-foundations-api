@@ -71,6 +71,18 @@ dotnet restore
 
 This will pull down all required NuGet packages.
 
+### 3. Start the Database
+
+## 3.1 Local Development
+
+First start mysql server on your machine using:
+
+`mysql.server start`
+
+mysql.server stop
+
+brew services list
+
 ### 3. Configure the Database
 
 1. Make sure **MySQL Server** is running on your machine (e.g., `localhost:3306`).
@@ -88,6 +100,10 @@ This will pull down all required NuGet packages.
    }
    ```
 
+Alternatively use the following command:
+
+`dotnet user-secrets set "ConnectionStrings:DefaultConnection"  "Server=SERVER_HOST_URL;Port=PORT;Database=YOUR_DATABASE_NAME;Uid=YOUR_SQL_DB_USER_UUID;Pwd=YOUR_PASSWORD,;SslMode=Required"`
+
 ### 4. Run Migrations
 
 To create the required Identity tables in your MySQL database:
@@ -101,7 +117,7 @@ This applies the migration to the `foundations` database, creating `AspNetUsers`
 
 ### 5. Launch the App
 
-Start the application:
+Go to `/FoundationApi` and start the application using:
 
 ```bash
 dotnet run
