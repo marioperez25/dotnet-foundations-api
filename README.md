@@ -73,15 +73,21 @@ This will pull down all required NuGet packages.
 
 ### 3. Start the Database
 
-## 3.1 Local Development
+## 3.1 Local Development **MacOS**
 
 First start mysql server on your machine using:
 
-`mysql.server start`
+`brew services start mysql`
 
-mysql.server stop
+# Other usefull **brew** commands
 
-brew services list
+Remember to stop the service
+
+`brew services stop mysql`
+
+Check service status
+
+`brew services list`
 
 ### 3. Configure the Database
 
